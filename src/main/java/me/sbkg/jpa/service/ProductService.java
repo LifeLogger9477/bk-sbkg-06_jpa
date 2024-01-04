@@ -1,4 +1,4 @@
-package me.sbkg.jpa.data.service;
+package me.sbkg.jpa.service;
 
 import me.sbkg.jpa.data.dto.ProductDTO;
 import me.sbkg.jpa.data.dto.ProductResponseDTO;

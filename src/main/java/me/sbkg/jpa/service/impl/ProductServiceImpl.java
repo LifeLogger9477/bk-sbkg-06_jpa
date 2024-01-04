@@ -1,10 +1,10 @@
-package me.sbkg.jpa.data.service.impl;
+package me.sbkg.jpa.service.impl;
 
 import me.sbkg.jpa.data.dao.ProductDAO;
 import me.sbkg.jpa.data.dto.ProductDTO;
 import me.sbkg.jpa.data.dto.ProductResponseDTO;
 import me.sbkg.jpa.data.entity.Product;
-import me.sbkg.jpa.data.service.ProductService;
+import me.sbkg.jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
