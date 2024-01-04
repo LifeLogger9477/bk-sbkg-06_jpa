@@ -62,4 +62,59 @@ public class ProductResponseDTO {
 
     this.stock = stock;
   }
+
+  public static ProductResponseDTOBuilder builder() {
+
+    return new ProductResponseDTOBuilder();
+  }
+
+  public static class ProductResponseDTOBuilder {
+
+    private Long number;
+    private String name;
+    private int price;
+    private int stock;
+
+    public ProductResponseDTOBuilder() {
+
+    }
+
+    public ProductResponseDTOBuilder number(Long number) {
+
+      this.number = number;
+      return this;
+    }
+
+    public ProductResponseDTOBuilder name(String name) {
+
+      this.name = name;
+      return this;
+    }
+
+    public ProductResponseDTOBuilder price(int price) {
+
+      this.price = price;
+      return this;
+    }
+
+    public ProductResponseDTOBuilder stock(int stock) {
+
+      this.stock = stock;
+      return this;
+    }
+
+    public ProductResponseDTO build() {
+
+      return new ProductResponseDTO( number, name, price, stock );
+    }
+
+    public String toString() {
+
+      return "ProductResponseDTO.ProductResponseDTOBuilder(" +
+          "number=" + this.number +
+          ", name=" + this.name +
+          ", price=" + this.price +
+          ", stock=" + this.stock + ")";
+    }
+  }
 }
