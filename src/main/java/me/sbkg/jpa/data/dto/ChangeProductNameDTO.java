@@ -1,41 +1,20 @@
 package me.sbkg.jpa.data.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 /**
  * author : ms.Lee
  * date   : 2024-01-04
  */
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ChangeProductNameDTO {
 
   private Long number;
   private String name;
-
-  public ChangeProductNameDTO() {
-
-  }
-
-  public ChangeProductNameDTO(Long number, String name) {
-
-    this.number = number;
-    this.name = name;
-  }
-
-  public Long getNumber() {
-
-    return number;
-  }
-
-  public void setNumber(Long number) {
-
-    this.number = number;
-  }
-
-  public String getName() {
-
-    return name;
-  }
-
-  public void setName(String name) {
-
-    this.name = name;
-  }
 }
